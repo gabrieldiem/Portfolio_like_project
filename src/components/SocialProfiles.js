@@ -3,7 +3,7 @@ import SOCIAL_PROFILES from '../data/socialProfiles';
 
 const Profile = (props) => {
     const { image, link } = props.profile;
-
+ 
     return (
         <span>
             <a href={link} target="_blank">
