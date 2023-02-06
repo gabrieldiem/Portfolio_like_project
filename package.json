@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url .",
+  "build": "parcel build src/index.html --public-url \"https://walgab.github.io/Portfolio_like_project/\"",
     "build-local": "parcel build src/index.html --dist-dir dist-local",
     "start": "npm run build-local && live-server dist-local"
   },
