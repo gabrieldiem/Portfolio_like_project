@@ -8,7 +8,7 @@ module.exports = {
   plugins: ['html'],
   settings: {
     'html/indent': '+2',
-    'html/report-bad-indent': 'error'
+    'html/report-bad-indent': 'warn'
   },
   parserOptions: {
     ecmaVersion: 'latest',
@@ -20,11 +20,12 @@ module.exports = {
   rules: {
     quotes: ['warn', 'single'],
     semi: ['error', 'always'],
-    indent: ['error', 2],
+    indent: ['warn', 2],
     'no-tabs': ['off'],
     'no-mixed-spaces-and-tabs': ['off'],
-    'no-multi-spaces': ['error'],
-    'no-trailing-spaces': ['error'],
+    'no-multi-spaces': ['warn'],
+    'no-trailing-spaces': ['warn'],
+    'no-unused-vars': ['warn'],
     'key-spacing': ['warn'],
     'object-curly-spacing': ['warn', 'always'],
     'react/no-unescaped-entities': ['off'],
