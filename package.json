@@ -11,9 +11,14 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "start": "npm run build && live-server dist"
+    "start": "npm run build && live-server dist",
+    "lint": "eslint --ext .js --ignore-path .gitignore ."
   },
   "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-react": "^7.32.2",
     "process": "^0.11.10"
   }
 }
