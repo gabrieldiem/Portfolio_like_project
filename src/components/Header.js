@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import baseRelativePath from '../path.js';
 
 const Header = ({ children }) => {
   const style = {
@@ -11,8 +12,8 @@ const Header = ({ children }) => {
   return (
     <div>
       <div>
-        <h3 style={style}><Link to="/">Home</Link></h3>
-        <h3 style={style}><Link to="/jokes">Jokes</Link></h3>
+        <h3 style={style}><Link to={`${baseRelativePath}/`}>Home</Link></h3>
+        <h3 style={style}><Link to={`${baseRelativePath}/jokes`}>Jokes</Link></h3>
       </div>
       {children}
     </div>
