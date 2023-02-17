@@ -23,16 +23,16 @@ class App extends Component {
     return (
       <div>
         <img src={profilePic} alt='profile pic' className='profilePic' />
-        <h1>Hello!</h1>
+        <h1>Hey, welcome!</h1>
         <Title />
-        <p>My name is Gabriel</p>
+        <p>My name is Gabriel Diem</p>
         <p>I'm always looking forward to working on meaningful projects.</p>
         {
           this.state.displayBio
             ? (
               <div>
-                <p>I live in Buenos Aires and I code every day.</p>
-                <p>My favourite language is JavaScript and I'm currently learning ReactJS!</p>
+                <p>I live in the City of Buenos Aires</p>
+                <p>I'm currently learning ReactJS!</p>
                 <p>Besides coding, I also like videogames and music!</p>
                 <button onClick={this.toggleDisplayBio}>Show less</button>
               </div>
