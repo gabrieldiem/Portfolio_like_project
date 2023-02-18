@@ -23,16 +23,6 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script>let FF_FOUC_FIX;
-// Add a listener for the 'hashchange' event, which will
-    // allow us to detect changes to the URL hash
-    window.addEventListener('hashchange', () => {
-      // If the hash is empty, redirect to the home page
-      if (window.location.hash === '') {
-        window.location.href = '/';
-      }
-    });
-</script>
   <div id="root"></div>
   <script src="index.js" type="module"></script>
 </body>

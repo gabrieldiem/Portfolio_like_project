@@ -13,13 +13,15 @@
     "react-router-dom": "^6.8.0"
   },
   "scripts": {
-    "dev": "rm -rf ./dist-local && echo 'Cleaned old dist-local' && parcel src/index.html --dist-dir dist-local",
-    "build": "rm -rf ./dist && echo 'Cleaned old dist' && parcel build src/index.html src/404.html --public-url /Portfolio_like_project/",
-    "build-local": "rm -rf ./dist-local && echo 'Cleaned old dist-local' && parcel build src/index.html src/404.html --dist-dir dist-local",
+    "clean": "rm -rf ./dist && echo 'Cleaned old dist directory'",
+    "clean-local": "rm -rf ./dist-local && echo 'Cleaned old dist-local directory'",
+    "dev": "npm run clean-local && parcel src/index.html src/404.html --dist-dir dist-local",
+    "build": "npm run clean && parcel build src/index.html src/404.html --public-url /Portfolio_like_project/",
+    "build-local": "npm run clean-local && parcel build src/index.html src/404.html --dist-dir dist-local",
     "start": "npm run build-local && live-server dist-local",
+    "serve-local": "npm run build-local && http-server ./dist-local -p 3000",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "serve-local": "npm run build-local && python -m http.server 3000 --directory ./dist-local"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.8.2",
