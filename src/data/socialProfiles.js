@@ -1,7 +1,7 @@
-import emailIcon from '../assets/email_icon.png'
-import githubIcon from '../assets/github_icon.png'
-import linkedinIcon from '../assets/linkedin_icon.png'
-import twitterIcon from '../assets/twitter_icon.png'
+import emailIcon from '../assets/email_icon.png';
+import githubIcon from '../assets/github_icon.png';
+import linkedinIcon from '../assets/linkedin_icon.png';
+import twitterIcon from '../assets/twitter_icon.png';
 
 const SOCIAL_PROFILES = [
   {
@@ -24,6 +24,6 @@ const SOCIAL_PROFILES = [
     link: 'https://www.twitter.com',
     image: twitterIcon
   }
-]
+];
 
-export default SOCIAL_PROFILES
+export default SOCIAL_PROFILES;
